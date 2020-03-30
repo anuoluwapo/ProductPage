@@ -5,17 +5,15 @@ body{
     padding: 0;
 }
 #header{
+    background-color: inherit;
     position: fixed;
     top: 0px;
     left: 0;
     right: 0;
     min-height: 75px;
-    /* width: 100%; */
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 10px 0px;
-    /* z-index: 12; */
 }
 #logo{
     width: 100%;
@@ -42,8 +40,15 @@ body{
      color: #000000;
      text-decoration: none;
 }
+#main{
+    margin-top: 5rem;
+}
+#wraper{
+    max-width: 1000px;
+    width: 100%;
+    margin: 3.5rem auto 0 auto;
+}
 #form-wraper{
-    margin-top: 6rem;
     text-align: center;
 }
 #form > div{
@@ -69,10 +74,9 @@ input::placeholder{
     cursor: pointer;
     background-color: orange;
 }
-
 .container{
     display: flex;
-    margin-bottom: 0;
+    margin-bottom: -1.5rem;
 }
 .icon{
     display: flex;
@@ -80,7 +84,7 @@ input::placeholder{
     align-items: center;
     color: darkorange;
     width: 20vw;
-    /* margin: 3rem auto; */
+    margin: 2.7rem auto;
     padding: 0.8rem;
 }
 .icon i{
@@ -97,11 +101,6 @@ input::placeholder{
 }
 .desk p{
     margin: 0.3rem auto 0 auto;
-}
-#wraper{
-    max-width: 1000px;
-    width: 100%;
-    margin: 4rem auto 0 auto;
 }
 #how-it-work div{
     display: flex;
@@ -160,7 +159,6 @@ li{
     color: #000;
     padding: 9px;
 }
-
 #footer p{
     color: #444;
     font-size: 0.9em;
@@ -202,7 +200,12 @@ li{
     #nav-bar ul>li{
         padding: 5px;
     }
-    
+    #main{
+        margin-top: 12rem;
+    }
+    #wraper{
+        margin-top: 2.3rem;
+    }
 }
 @media(max-width:800px){
     #pricing{
@@ -211,7 +214,6 @@ li{
     }
     .product{
         max-width: 300px;
-        margin: 0 auto;
-        margin-bottom: 10px;
+        margin: 0 auto 10px auto;
     }
 }
